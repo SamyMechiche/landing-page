@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Italiana", sans-serif;
+    text-align: center;
+    background-color: #c8e6c9;;
+}
+
+.header-image {
+    width: 100%;
+    height: 30%;
+    height: auto;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 5px 15px #000;
+}
+
+.main-image {
+    width: 100%;
+    height: 30%;
+    height: auto;
+}
+
+.hero-text {
+    background-color: #c8e6c9;
+    position: relative;
+}
+
+.hero-text > img {
+    position: absolute;
+}
+
+.bush-1 {
+    width: 7em;
+    height: auto;
+    bottom: -1.5em;
+    left: 0;
+}
+
+.bush-2 {
+    width: 4em;
+    height: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #3f3f3f;
+    padding-bottom: 1.5em;
+    letter-spacing: 0.22em;
+}
+
+.hero-text p {
+    font-size: 2em;
+    margin: 0.5em 0;
+    color: #505050;
+    text-align: center;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+span {
+    color: #5d4037;
+}
+
+.cta-button {
+    background-color: #5d4037;
+    color: #fff;
+    text-transform:capitalize;
+    border-radius: 15px;
+    border: 2px solid #5d4037;
+    padding: 1em 1.5em;
+    font-size: 1.5em;
+    font-family: "Italiana", sans-serif;
+    transition: all .3s ease;
+}
+
+.cta-button:hover {
+    color: #5d4037;
+    background-color: #fff;
+    border: 2px solid #5d4037;
+}
+
+a {
+    text-decoration: none;
+}
+
+main > figure {
+    width: 100%;
+}
+
+main > figure > img {
+    display: block;
+}
+
+.features {
+    background-color: #8d6e63;
+    color: white;
+    padding: 1em;
+}
+
+.feature {
+    margin: 1em 0;
+}
+
+main > section > div > h2 > img {
+    height: 30%;
+}
+
+.footer-text {
+    background-color: #8d6e63;
+    color: white;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+
+    .header-image {
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .main-image {
+        max-height: 200px;
+    }
+
+    .hero-text {
+        padding: 2em;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.5em;
+    }
+
+    .cta-button {
+        font-size: 1.2em;
+        padding: 1em 1.5em;
+    }
+
+    .bush-1 {
+        width: 15em;
+        bottom: -3.3em;
+    }
+
+    .bush-2 {
+        width: 6em;
+    }
+
+    .features {
+        padding-top: 1em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .feature {
+        margin: 0;
+        width: 30%;
+    }
+
+    .footer-text {
+        padding: 2em;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .header-image {
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .main-image {
+        max-height: 200px;
+    }
+
+    .hero-text {
+        padding: 3em;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5em;
+        padding-bottom: 1.3em;
+    }
+
+    .hero-text p {
+        font-size: 3em;
+    }
+
+    .cta-button {
+        font-size: 1.5em;
+        padding: 1em 2em;
+    }
+
+    .bush-1 {
+        width: 20em;
+        bottom: -4.5em;
+    }
+
+    .bush-2 {
+        width: 10em;
+    }
+
+    .features {
+        padding: 2em;
+    }
+
+    .feature {
+        width: 25%;
+    }
+
+    .footer-text {
+        padding: 3em;
+    }
+} 
