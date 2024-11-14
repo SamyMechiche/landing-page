@@ -1,23 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
 }
 
 body {
     font-family: "Italiana", sans-serif;
     text-align: center;
-    background-color: #c8e6c9;;
+    background-color: #5d4037;
 }
 
 .header-image {
     width: 100%;
     height: 30%;
     height: auto;
-    border-radius: 0 0 50px 50px;
-    box-shadow: 0 5px 15px #000;
+    box-shadow: 0 10px 25px #000;
 }
 
 .main-image {
@@ -29,6 +46,7 @@ body {
 .hero-text {
     background-color: #c8e6c9;
     position: relative;
+    border-top: 2px solid #5d4037;
 }
 
 .hero-text > img {
@@ -52,7 +70,7 @@ body {
 .hero-text h1 {
     font-size: 2.5em;
     color: #3f3f3f;
-    padding-bottom: 1.5em;
+    padding: 1.5em;
     letter-spacing: 0.22em;
 }
 
@@ -85,6 +103,7 @@ span {
     text-transform:capitalize;
     border-radius: 15px;
     border: 2px solid #5d4037;
+    margin-bottom: 0.3em;
     padding: 1em 1.5em;
     font-size: 1.5em;
     font-family: "Italiana", sans-serif;
@@ -93,6 +112,7 @@ span {
 
 .cta-button:hover {
     color: #5d4037;
+    font-weight: bold;
     background-color: #fff;
     border: 2px solid #5d4037;
 }
@@ -109,10 +129,193 @@ main > figure > img {
     display: block;
 }
 
+#about-konoha {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    background-color: #c8e6c9;
+  }
+  
+  #about-konoha .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #about-konoha h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: underline double;
+    text-decoration-thickness: 0.03em;
+  }
+  
+  #about-konoha p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+  
+  #about-konoha img {
+    padding: 2em, 0;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 20px 20px 0 #9ecf9fcc, -20px -20px 0 #9ecf9fcc;
+  }
+
+  #blog-news {
+    padding: 50px 0;
+    background-color: #9ecf9fcc;
+    text-align: center;
+  }
+  
+  #blog-news .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #blog-news h2 {
+    color: #3f3f3f;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+  
+  #blog-news .articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  #blog-news article {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+
+  #blog-news article figure {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  #blog-news article figure img {
+    display: block;
+    width: 100%;
+    scale: 1;
+    height: auto;
+    transition: all .3s ease;
+  }
+
+  #blog-news article:hover img {
+    scale: 1.2;
+  }
+  
+  #blog-news article h3 {
+    color: #3f3f3f;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  #blog-news article p {
+    font-size: 1.5em;
+    margin: 0 20px 20px;
+    color: #2c2c2c;
+  }
+
+  .pricing-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pricing-card .price {
+    font-size: 2.5em;
+    color: #254b1e;
+    margin: 20px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-card ul li {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.pricing-card .btn {
+    display: inline-block;
+    padding: .7em;
+    background-color: #5d4037;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+.pricing-card .btn:hover {
+    color: #5d4037;
+    background-color: #ffffff;
+    border: 2px solid #5d4037;
+}
+
+.picto {
+    width: 2.5em;
+    margin-right: 1em;
+}
+
 .features {
     background-color: #8d6e63;
     color: white;
     padding: 1em;
+}
+
+.spin {
+    transition: all .5s ease;
+}
+
+.spin:hover {
+    transform: rotate(1080deg);
 }
 
 .feature {
@@ -167,6 +370,26 @@ main > section > div > h2 > img {
         width: 6em;
     }
 
+    #about-konoha {
+        padding: 30px 0;
+      }
+    
+      #about-konoha h2 {
+        font-size: 2.5em;
+      }
+    
+      #about-konoha p {
+        font-size: 1.7em;
+        margin-bottom: 2em;
+      }
+
+    #blog-news .articles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
     .features {
         padding-top: 1em;
         display: flex;
@@ -200,7 +423,7 @@ main > section > div > h2 > img {
 
     .hero-text h1 {
         font-size: 3.5em;
-        padding-bottom: 1.3em;
+        padding: 0.5em 0 1em 0;
     }
 
     .hero-text p {
@@ -214,12 +437,18 @@ main > section > div > h2 > img {
 
     .bush-1 {
         width: 20em;
-        bottom: -4.5em;
+        bottom: -4.3em;
     }
 
     .bush-2 {
         width: 10em;
     }
+
+    #blog-news .articles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
 
     .features {
         padding: 2em;
@@ -227,9 +456,72 @@ main > section > div > h2 > img {
 
     .feature {
         width: 25%;
+        font-size: 2em;
     }
 
     .footer-text {
-        padding: 3em;
+        font-size: 3em;
+        padding: 1.5em;
     }
+}
+
+@media (min-width: 1900px) {
+
+        .header-image {
+            max-height: 200px;
+            object-fit: cover;
+        }
+    
+        .main-image {
+            max-height: 200px;
+        }
+    
+        .hero-text {
+            padding: 3em;
+        }
+    
+        .hero-text h1 {
+            font-size: 3.5em;
+            padding-bottom: 1.3em;
+        }
+    
+        .hero-text p {
+            font-size: 3em;
+        }
+    
+        .cta-button {
+            font-size: 2.5em;
+            padding: 1em 2em;
+            margin-bottom: 3em;
+        }
+    
+        .bush-1 {
+            width: 25em;
+            bottom: -5.5em;
+        }
+    
+        .bush-2 {
+            width: 13em;
+        }
+
+        #blog-news .articles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+    
+        .features {
+            padding: 2em;
+        }
+    
+        .feature {
+            width: 25%;
+            font-size: 2em;
+        }
+    
+        .footer-text {
+            font-size: 3em;
+            padding: 1.5em;
+        }
 } 
