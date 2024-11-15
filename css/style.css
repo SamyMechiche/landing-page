@@ -229,7 +229,7 @@ main > figure > img {
 
   .pricing-section {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-image: url(../asset/img/SL-123122-55000-29.jpg);
     text-align: center;
 }
 
@@ -247,8 +247,11 @@ main > figure > img {
 }
 
 .pricing-card {
-    background: white;
-    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(247, 247, 247);
+    border: 1px solid #b9b9b9;
     border-radius: 10px;
     padding: 20px;
     max-width: 300px;
@@ -260,13 +263,11 @@ main > figure > img {
 .pricing-card h3 {
     font-size: 1.8em;
     color: #333;
-    margin-bottom: 20px;
 }
 
 .pricing-card .price {
     font-size: 2.5em;
     color: #254b1e;
-    margin: 20px 0;
 }
 
 .pricing-card ul {
@@ -286,6 +287,7 @@ main > figure > img {
     display: inline-block;
     padding: .7em;
     background-color: #5d4037;
+    border: 2px solid #5d4037;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -302,6 +304,11 @@ main > figure > img {
 .picto {
     width: 2.5em;
     margin-right: 1em;
+}
+
+.picto-2 {
+    width: 2em;
+    height: 2.5em;
 }
 
 .features {
@@ -399,6 +406,9 @@ main > section > div > h2 > img {
     .feature {
         margin: 0;
         width: 30%;
+        display: block;
+        height: 1.5em;
+        line-height: 1.5em;
     }
 
     .footer-text {

@@ -1,7 +1,7 @@
 # landing-page
 projet 1 - landing page responsive
 
-lien du figma: https://www.figma.com/design/1spNTCTUqRYvfXYMkPbw7L/Landing-page?t=DAeNDCyjaCsTASso-1
+figma link: https://www.figma.com/design/1spNTCTUqRYvfXYMkPbw7L/Landing-page?t=DAeNDCyjaCsTASso-1
 
-add some more CSS, created the "blog news" and the "about-konoha" sections with the articles
-add prices cards
+download the Italiana and Lato fonts
+(search for a better color palette plz)
